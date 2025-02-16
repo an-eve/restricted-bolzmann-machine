@@ -1,10 +1,26 @@
-## Acknowledgements
+# Fashion-MNIST Exploration with Deep Belief Networks (DBN)
 
-This project includes code from [Deep-Belief-Network-pytorch](https://github.com/flavio2018/Deep-Belief-Network-pytorch) by [flavio2018](https://github.com/flavio2018).
+## Overview
+This project implements a **Deep Belief Network (DBN)** for classifying images from the **Fashion-MNIST** dataset. A DBN is a stack of **Restricted Boltzmann Machines (RBMs)** trained in a greedy layer-wise manner, capturing hierarchical feature representations. The project also compares DBN performance against Feedforward Neural Networks (FNN) and Convolutional Neural Networks (CNN) under noisy and adversarial conditions.
 
-Specifically, the following files were adapted from the original repository:
+## Features
+- **DBN Implementation**: Built using multiple layers of RBMs
+- **RBM Training**: Contrastive Divergence for unsupervised learning
+- **Dataset**: Fashion-MNIST (60,000 training, 10,000 test samples, 10 classes)
+- **Visualization**:  
+  - Receptive fields of hidden layers  
+  - Clustering of learned representations  
+  - Robustness analysis against noise and adversarial attacks  
+- **Model Comparison**: DBN vs. FNN vs. CNN in classification robustness
+- **Adversarial Defense**: Investigating top-down reconstruction to counter adversarial attacks
 
-- [`DBM.py`](https://github.com/flavio2018/Deep-Belief-Network-pytorch/blob/master/DBN.py)
-- [`RBM.py`](https://github.com/flavio2018/Deep-Belief-Network-pytorch/blob/master/RBM.py)
+## Project Structure
+```plaintext
+.
+├── DBN.py                 # Deep Belief Network implementation
+├── RBM.py                 # Restricted Boltzmann Machine implementation
+├── dbn_project.ipynb      # Main Jupyter Notebook with experiments
+├── README.md              # Project documentation
+```
 
 
